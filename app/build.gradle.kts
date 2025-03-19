@@ -39,5 +39,6 @@ dependencies {
     implementation(libs.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
+    implementation ("com.github.bumptech.glide:glide:4.12.0")
     androidTestImplementation(libs.espresso.core)
 }

@@ -1,5 +1,6 @@
 package com.example.meal_mate;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -40,9 +41,8 @@ public class GroceryFragment extends Fragment {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemList.add("Item " + (itemList.size() + 1));
-                adapter.notifyItemInserted(itemList.size() - 1);
-                recyclerView.scrollToPosition(itemList.size() - 1);
+                Intent febIntent=new Intent(getContext(),AddGrocery.class);
+                startActivity(febIntent);
             }
         });
         return view;
