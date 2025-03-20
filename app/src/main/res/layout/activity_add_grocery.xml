@@ -6,7 +6,7 @@
     android:gravity="center"
     android:padding="16dp">
     <ImageView
-        android:id="@+id/groceryImage"
+        android:id="@+id/ivGroceryImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:scaleType="centerCrop"
@@ -14,36 +14,43 @@
         android:layout_marginBottom="20dp"/>
 
     <Button
-        android:id="@+id/btnSelectImage"
+        android:id="@+id/btnChooseImage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Select Image"/>
 
 
     <EditText
-        android:id="@+id/editName"
+        android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Grocery Name"/>
 
     <EditText
-        android:id="@+id/editPrice"
+        android:id="@+id/etPrice"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Price"
         android:inputType="numberDecimal"/>
 
     <EditText
-        android:id="@+id/editDescription"
+        android:id="@+id/etDescription"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Description"/>
 
-    <EditText
-        android:id="@+id/editLocation"
+    <TextView
+        android:id="@+id/tvLocation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Location"/>
+        android:text="Location: Not Selected"
+        android:textStyle="bold"
+        android:padding="8dp"/>
+    <Button
+        android:id="@+id/btnChooseLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Location from Map"/>
 
     <Button
         android:id="@+id/btnSave"
