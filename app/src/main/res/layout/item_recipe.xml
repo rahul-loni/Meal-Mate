@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp">
+
+    <!-- Recipe Name Text -->
+    <TextView
+        android:id="@+id/recipeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recipe Name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="8dp"/>
+
+    <!-- Recipe Week Text -->
+    <TextView
+        android:id="@+id/recipeWeek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Week: 1"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:paddingBottom="4dp"/>
+
+    <!-- Groceries Text -->
+    <TextView
+        android:id="@+id/recipeGroceries"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Groceries: Rice, Beans"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:paddingBottom="8dp"/>
+
+    <!-- Recipe Image -->
+    <ImageView
+        android:id="@+id/recipeImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Recipe Image"
+        android:src="@drawable/upload"/>
+
+</LinearLayout>
